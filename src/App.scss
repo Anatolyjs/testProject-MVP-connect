@@ -1,0 +1,25 @@
+@import url(./nulStyle.scss);
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300;500&display=swap');
+@import url('https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css');
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+
+body {
+  font-weight: 300;
+}
+
+.container {
+  max-width: 1400px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.app {
+  min-height: 100vh;
+  background-color: rgb(28, 27, 27);
+  font-family: 'Signika Negative', sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+

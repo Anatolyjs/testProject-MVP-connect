@@ -1,0 +1,93 @@
+.details {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.eventDetails {
+    flex-grow: 1;
+    background-color: #000;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, .1);
+    margin-bottom: 10px;
+    transition: all .3s ease;
+    color: #fff;
+    max-width: 500px;
+    width: 100%;
+    padding: 40px;
+    &:last-child {
+        margin: 0;
+    }
+    &__title {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+    &__members {
+        font-size: 17px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .item {
+            flex: 1 1 33.333%;
+            padding: 0 10px;
+        }
+    }
+    &__time {
+        font-size: 25px;
+    }
+    &__coefficients {
+        margin-top: 20px;
+        display: flex;
+        .coefficient {
+            font-size: 17px;
+            flex: 1 1 33.333%;
+            padding: 0 15px;
+            &__body {
+                background-color: rgb(28, 27, 27);
+                padding: 10px 0;
+                border-radius: 5px;
+                border: 1px solid rgba(255, 255, 255, .1);
+                transition:  all .3s ease;
+                &:hover {
+                    border: 1px solid rgba(255, 255, 255, .4);
+                }
+                cursor: pointer;
+            }
+            &.active {
+                .coefficient__body {
+                    background-color: rgba(255, 255, 255, .5);
+                }
+            }
+        }
+    }
+    &__btn {
+        font-size: 17px;
+        margin-top: 30px;
+        max-width: 150px;
+        width: 100%;
+        background-color: rgba(255, 230, 55, 1);
+        border-radius: 5px;
+        padding: 10px 0;
+        transition: all .3s ease;
+        &:hover {
+            background-color: rgba(255, 230, 55, .8);
+        }
+    }
+    @media (max-width: 480px) {
+        padding: 10px;
+        &__title {
+            font-size: 25px;
+        }
+        &__time {
+            font-size: 20px;
+        }
+        &__coefficients {
+            flex-direction: column;
+            .coefficient {
+                margin-bottom: 5px;
+            }
+        }
+    }
+}

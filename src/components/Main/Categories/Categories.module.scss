@@ -1,0 +1,28 @@
+.categories {
+    min-height: 100%;
+    border-right: 1px solid rgba(255, 255, 255, .2);;
+    color: #fff;
+    padding: 10px 2px 0px 0px;
+    background-color: rgb(28, 27, 27);
+
+    &__body {
+        max-height: 100vh;
+        overflow: auto;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.category {
+    margin: 10px 0;
+    text-align: center;
+    transition: all .3s ease;
+    padding: 0 20px;
+    cursor: pointer;
+    &:hover {
+        color: #ffe637;
+    }  
+    .active {
+        color: #ffe637;
+    }
+}

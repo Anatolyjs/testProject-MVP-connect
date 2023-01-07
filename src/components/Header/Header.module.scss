@@ -1,0 +1,71 @@
+.header {
+    background-color: #000;
+    font-size: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 5;
+    &__body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 0;
+        text-align: center;
+    }
+    &__nav {
+        display: flex;
+        .item {
+            color: #fff;
+            margin: 0 20px;
+            transition: all .3s ease;
+            &.active {
+                a {
+                    color: #ffe637;  
+                } 
+                i {
+                    color: #ffe637;  
+                }
+            }
+            &:last-child {
+                margin-right: 0;
+            }
+            i {
+                margin-right: 5px;
+            }
+            a {
+                color: #fff;
+                transition: inherit;
+            }
+            &:hover {
+                color: #ffe637;
+                a {
+                    color: #ffe637;  
+                }
+            }
+
+        }
+    }
+    // &__auth {
+    //     .auth__login, .auth__register {
+    //         padding: 5px 20px;
+    //         color: #000;
+    //         font-size: 17px;
+    //         border-radius: 5px;
+    //         background-color: #fff;
+    //         transition: all .3s ease;
+    //     }
+    //     .auth__login {
+    //         background-color: rgba(255, 230, 55, 1);
+    //         margin-right: 10px;
+    //         &:hover {
+    //             background-color: rgba(255, 230, 55, 0.8);
+    //         }
+    //     }
+    //     .auth__register {
+    //         &:hover {
+    //             background-color: rgba(255, 255, 255, 0.8);
+    //         }
+    //     }
+    // }
+}
